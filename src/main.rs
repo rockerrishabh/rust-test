@@ -21,7 +21,7 @@ async fn index() -> String {
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(index))
-        .bind(("127.0.0.1", 5000))?
+        .bind(("0.0.0.0", 5000))?
         .run()
         .await
 }
