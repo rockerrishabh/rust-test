@@ -1,0 +1,8 @@
+-- Your SQL goes here
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  email TEXT NOT NULL,
+  password TEXT NOT NULL,
+  verified BOOLEAN NOT NULL DEFAULT FALSE
+)
